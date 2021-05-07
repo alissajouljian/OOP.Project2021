@@ -133,8 +133,15 @@ Movie m4 = new Movie("Annie", "Musical/Family", 2, "Will Gluck");
         ActionListener listener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int age = Integer.parseInt(ageText.getText());
-
+                int age=0;
+                try{
+                    
+               age = Integer.parseInt(ageText.getText());
+                    
+                }catch(NumberFormatException w){
+                        JOptionPane.showMessageDialog(panel,"Please Input An Integer" ,"ERROR", JOptionPane.ERROR_MESSAGE);
+                         return;
+                    }
 
                 if (e.getSource() == button) {
                     if (age < 18) {
@@ -168,7 +175,7 @@ Movie m4 = new Movie("Annie", "Musical/Family", 2, "Will Gluck");
                     String seatR = seatRow.getText();
                     Seats s = new Seats(seatR, seatC, true);
                     //System.out.println("Successfully booked" + "  Column  " + s.getColumn() + " Row " + s.getRow());
-                    JOptionPane.showMessageDialog(panel,  "The booked seat is"+ s.getLabel(),"Booked", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(panel,  "The booked seat is "+ s.getLabel() + "\n" + "Thank you""Booked", JOptionPane.INFORMATION_MESSAGE);
 
                 }}
 
