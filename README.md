@@ -1,4 +1,7 @@
-***Theater Booking System***
-This Java project implements a simple **Music Theater Booking System**. It manages theater seat reservations for different audience types, including `Adult` and `Child`. The system models key entities such as `Movie`, `Person`, and `Seats`, allowing users to book and track available seats efficiently.
+# **Theater Booking System**
 
-The project includes demo programs (`demo.java`, `demo2.java`) that illustrate the booking process and demonstrate how the classes interact to handle reservations, pricing, and seat management. This project is useful for understanding object-oriented design, class interactions, and basic booking system logic in Java.
+This Java project implements a **Music Theater Booking System** that allows users to manage and reserve theater seats efficiently. It supports different audience types, such as `Adult` and `Child`, and models essential entities including `Movie`, `Person`, and `Seats`.
+
+The system provides a clear demonstration of **object-oriented design**, showcasing how classes interact to handle bookings, seat availability, and pricing logic.
+
+Included demo programs (`demo.java`, `demo2.java`) illustrate the booking workflow, showing how reservations are created and managed in a practical setting. This project is ideal for learning Java OOP principles and building foundational booking system logic.
